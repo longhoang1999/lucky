@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vòng quay may mắn</title>  
+    <link rel="stylesheet" href="test.css">
+    <link rel="shortcut icon" href="img/clb.jpg">
+</head>
+<body>
+    <div class="main">
+        <div class="body">
+            <div class="wavy">
+                <span style="--i:1;">V</span>
+                <span style="--i:2;">ò</span>
+                <span style="--i:3;">n</span>
+                <span style="--i:4;">g</span>
+                <span>&nbsp;&nbsp;</span>
+                <span style="--i:5;">q</span>
+                <span style="--i:6;">u</span>
+                <span style="--i:7;">a</span>
+                <span style="--i:8;">y</span>
+                <span>&nbsp;&nbsp;</span>
+                <span style="--i:9;">m</span>
+                <span style="--i:10;">a</span>
+                <span style="--i:11;">y</span>
+                <span>&nbsp;&nbsp;</span>
+                <span style="--i:12;">m</span>
+                <span style="--i:13;">ắ</span>
+                <span style="--i:14;">n</span>
+                <span style="--i:15;">!</span>
+            </div>
+        </div>
+        <div id="chart"></div>
+        <div id="question">
+            <h1></h1>
+        </div>
+
+        <div class="body2">
+            <div class="drops">
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+            </div>
+        </div>
+
+        <section>
+            <div class="section">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+        <div class="left">
+            <img src="img/khoa.GIF" alt="">
+        </div>
+        <div class="right">
+            <img src="img/clb.jpg" alt="">
+        </div>
+
+        <audio autoplay loop  id="playAudio">
+            <source src="img/lucky.mp3">
+        </audio>
+    </div>
+    
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="test.js"></script>
+    <script>
+        var audio = document.querySelector("#playAudio");
+        window.addEventListener("mousemove", () => {
+            audio.play();
+        })
+    </script>
+</body>
+</html>
